@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import A_Category
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        CTMediator.sharedInstance().a_aViewController()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let acontroller = CTMediator.sharedInstance().a_aViewController()
+        self.navigationController?.pushViewController(acontroller!, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
