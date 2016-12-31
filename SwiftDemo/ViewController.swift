@@ -13,7 +13,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        CTMediator.sharedInstance().a_aViewController()
     }
 
     override func viewDidAppear(_ animated: Bool) {
