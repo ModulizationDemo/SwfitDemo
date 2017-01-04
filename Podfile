@@ -10,6 +10,6 @@ target 'SwiftDemo' do
 
   # Pods for SwiftDemo
   pod 'A_Category'
-  pod 'A'
+  pod 'A_swift'
 
 end
