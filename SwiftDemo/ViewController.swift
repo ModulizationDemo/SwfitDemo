@@ -12,7 +12,9 @@ import A_Category
 class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let acontroller = CTMediator.sharedInstance().a_aViewController()
+        let acontroller = CTMediator.sharedInstance().a_aViewController{ result in
+            print(result ?? "default value")
+        }
         self.navigationController?.pushViewController(acontroller!, animated: true)
     }
 }
