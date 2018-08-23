@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         let acontroller = CTMediator.sharedInstance().a_aViewController{ result in
             print(result ?? "default value")
         }
-        self.navigationController?.pushViewController(acontroller!, animated: true)
+        navigationController?.pushViewController(acontroller!, animated: true)
     }
 }
 

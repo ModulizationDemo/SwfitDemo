@@ -9,7 +9,7 @@ target 'SwiftDemo' do
   use_frameworks!
 
   # Pods for SwiftDemo
-  pod 'A_Category'
-  pod 'A_swift'
+  pod 'A_Category', :path => '../A_Category'
+  pod 'A_swift', :path => '../A_swift'
 
 end
