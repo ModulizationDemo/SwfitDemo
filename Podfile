@@ -11,5 +11,6 @@ target 'SwiftDemo' do
   # Pods for SwiftDemo
   pod 'A_Category'
   pod 'A_swift'
+  pod 'A_Extension'
 
 end

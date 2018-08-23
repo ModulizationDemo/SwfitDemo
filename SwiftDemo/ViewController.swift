@@ -8,12 +8,20 @@
 
 import UIKit
 import A_Category
+import A_Extension
 
 class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let acontroller = CTMediator.sharedInstance().a_aViewController{ result in
-            print(result ?? "default value")
+        
+        // Category
+//        let acontroller = CTMediator.sharedInstance().a_aViewController{ result in
+//            print(result ?? "default value")
+//        }
+
+        // Extension
+        let acontroller = CTMediator.sharedInstance().A_show { (result) in
+            print(result)
         }
         navigationController?.pushViewController(acontroller!, animated: true)
     }
