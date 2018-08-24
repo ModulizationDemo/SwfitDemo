@@ -19,8 +19,13 @@ class ViewController: UIViewController {
 //            print(result ?? "default value")
 //        }
 
-        // Extension
-        let acontroller = CTMediator.sharedInstance().A_show { (result) in
+        // Extension call swift
+//        let acontroller = CTMediator.sharedInstance().A_show { (result) in
+//            print(result)
+//        }
+        
+        // Extension call objc
+        let acontroller = CTMediator.sharedInstance().A_showObjc { (result) in
             print(result)
         }
         navigationController?.pushViewController(acontroller!, animated: true)
