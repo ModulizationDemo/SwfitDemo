@@ -10,8 +10,10 @@ target 'SwiftDemo' do
 
   # Pods for SwiftDemo
   pod 'A_Category'
-  # pod 'A_swift'
-  pod 'A_Extension', :path => '../A_Extension'
-  pod 'A', :path => '../A'
+  pod 'A_swift'
+  # pod 'A_Extension', :path => '../A_Extension'
+  pod 'A_Extension'
+  # pod 'A', :path => '../A'
+  pod 'A'
 
 end
